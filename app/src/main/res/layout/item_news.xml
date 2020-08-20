@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F5F6F8"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="16dp">
+        
+        <ImageView
+            android:id="@+id/imgNews"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitXY"/>
+        
+        <TextView
+            android:id="@+id/tvTitleNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgNews"
+            android:layout_marginLeft="8dp"
+            tools:text="News Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="4"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tvTextAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/author"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tvTitleNews"
+            android:layout_toEndOf="@id/imgNews"/>
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitleNews"
+            android:layout_toEndOf="@id/tvTextAuthor"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Mirza Faturrachman"
+            android:textStyle="italic"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
